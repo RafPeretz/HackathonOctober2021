@@ -3,34 +3,45 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="clickTest.css">
 </head>
 <body>
-	<div class="tain">
-		<h1 class="title">Click Test</h1>
-	</div>
-	
-
-	<section class="tout">
-		<section class="leadboar">
-			<div>
-				<input type="text" name="name" placeholder="add your name then play ">
-				<button class="btn"></button>
+	<div class="container">
+		<div class="row">
+			<div class="col-3">
+				<input class="mt-5 carte " type="text" name="name" placeholder="add your name then play ">
+				<button class="text-center btn btn-sm" type="button" class="btn btn-secondary">add to game</button>
+				<h1 class="mt-5">LeadBoard</h1>
+				<h5></h5>
 			</div>
-			<h1>LeadBoard</h1>
-			<h5></h5>
-		</section>
-		<section class="ce">
-			<div class="container">
-				<p>You have 10 seconds to click</p>
-				<p class="text">0</p>	
-				<div class="result"></div>	
+			<div class="col-6">
+				<h1 class="text-center">Click Test</h1>
+				<div class="card text-center mx-auto carte" style="width: 25rem;">
+					<div class="card-body">
+						<p class="fs-4">You have 10 seconds to click</p>
+						<br><br><br><br>
+						<p class="text mx-auto">0</p>	
+						<br><br><br><br>	
+						<p class="zimer fs-5">00:10</p>
+						<br><br><br><br>
+
+						<p class="clear text2 mx-auto">Clear</p>
+						<br><br><br>
+					</div>
+				</div>
+
 			</div>
-		</section>
-	</section>
+			<div class="col-3">
+				<br><br><br><br><br><br><br><br>
+				<div class="result fs-5"></div>
 
 
-
+			</div>
+		</div>
+	</div>	
 	<script src="clickTest.js"></script>
+
 </body>
 </html>
